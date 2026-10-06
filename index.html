@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi tienda</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+  <header class="comic-header">
+    <h1>💥 Harvey <span>Comics</span> 💥</h1>
+    <p>Tu tienda de cómics, manga y coleccionables</p>
+  </header>
+
+  <style>
+    .comic-header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #ffd60a;
+      background-image: radial-gradient(#e63946 20%, transparent 21%);
+      background-size: 14px 14px;
+      border-bottom: 6px solid #111;
+    }
+
+    .comic-header h1 {
+      font-family: 'Bangers', cursive;
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      letter-spacing: 3px;
+      margin: 0;
+      color: #fff;
+      -webkit-text-stroke: 3px #111;
+      text-shadow: 5px 5px 0 #e63946, 8px 8px 0 #111;
+      transform: rotate(-2deg);
+    }
+
+    .comic-header h1 span {
+      color: #e63946;
+    }
+
+    .comic-header p {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 8px 18px;
+      background: #111;
+      color: #ffd60a;
+      font-family: 'Bangers', cursive;
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      transform: rotate(1deg);
+    }
+  </style>
+
+  <p class="slogan">
+    Héroes, villanos y mundos infinitos a un clic de distancia 🦸‍♂️
+  </p>
+
+  <div class="beneficios">
+    <span>🚚 Envíos en Bogotá</span>
+    <span>🔒 Compra segura</span>
+    <span>📦 Seguimiento de pedido</span>
+  </div>
+
+  <div id="productos"></div>
+
+  <div class="carrito">
+    <h2>🧾 Carrito de Compras</h2>
+
+    <ul id="lista-carrito"></ul>
+
+    <div class="resumen">
+      <p>
+        Envío: <strong>Gratis</strong>
+      </p>
+
+      <p class="total">
+        Total: $<span id="total">0</span>
+      </p>
+    </div>
+
+    <button class="vaciar" onclick="vaciarCarrito()">
+      🧼 Vaciar Carrito
+    </button>
+
+    <button class="finalizar" onclick="finalizarCompra()">
+      ✅ Finalizar Compra
+    </button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
